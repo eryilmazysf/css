@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: red;
+            background-color: yellow;
+        }
+
+        div .paragraf1 {
+            background-color: white;
+            color: violet;
+        }
+
+        div p {
+            color: turquoise;
+        }
+
+        h3,
+        h4 {
+            color: brown;
+        }
+        div>p{
+            font-size: 50px;
+        }                     /* div atindaki p   ler      */
+        #divsiz ~ div{          /*  ~ bu işaretten önceki ile sonrasında aynı seviyede bulunanlarını  belirtmek için kullanılır           */
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        burası div inside
+        <p class="paragraf1">paragraf1</p>
+
+        <p class="paragraf2">paragraf2</p>
+
+        <p class="paragraf3">paragraf3</p>
+    </div>
+    <p id="divsiz"> divsiz p</p>
+    <div class="container">
+
+        <h2>DİV2</h2>
+        <h3>h3 paragraf</h3>
+        <h4>h4 paragraf</h4>
+    </div>
+</body>
+
+</html>

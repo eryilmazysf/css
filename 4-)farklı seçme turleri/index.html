@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter {
+            /* ilk satıra uygulama yapar first-(line letter)  */
+            color: red;
+            background-color: yellow;
+        }
+        
+        p {
+            font-size: 30px;
+        }
+        
+        p::after {
+            content: "YASİN";
+            background-color: pink;
+        }
+        
+        a:link {
+            color: blue;
+        }
+        
+        a:hover {
+            /* üzerine gelince */
+            color: red;
+            font-size: 50px;
+            text-decoration: none;
+            /* altçizgi kalkar*/
+        }
+        
+        a:active {
+            /* clik yapınca */
+            color: yellow;
+        }
+        
+        img[title="coder"] {
+            border: 5px solid black;
+        }
+        
+        img[width="50%"] {
+            border: 5px solid black;
+        }
+        /* ~ içinde geçen, $ sonunda gecen,^ basında gecen demektir */
+        
+        p[title ^="1"] {
+            /*başında 1 olan seçmek demek */
+            color: aqua;
+        }
+        
+        p[title $="2"] {
+            /* sonunda 2 olan seçmek */
+            background-color: bisque;
+        }
+        
+        a[target="_blank"]:visited {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>YUSUF ERYILMAZ </p>
+    <a href="https://www.udemy.com/">GO TO UDEMY PAGE </a>
+    <br>
+    <img src="img/coder.jpg" width="50%" alt="" title="coder">
+    <br>
+    <img src="img/flower.jpg" width="50%" alt="">
+    <br>
+    <img src="img/phone.jpg" width="50%" alt="">
+    <p title="1.pargaraf">paragraf1 </p>
+    <p title="paragf.2">paragraf2 </p>
+    <p>paragraf3 </p>
+    <br>
+    <a href="https://www.google.com">GOOGLE</a>
+    <br>
+    <hr>
+    <a href="https://www.youtube.com" target="_blank">YOUTUBE</a>
+    <br>
+    <hr>
+</body>
+
+</html>

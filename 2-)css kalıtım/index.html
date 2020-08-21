@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: royalblue !important;
+        }
+
+        .futbol {
+            color: hotpink;
+        }
+
+        .basket {          
+            color: purple;
+        }
+
+        .voleybol {
+            color: green;
+        }
+                                        /* nokta class için # id için kulanılır    */
+        #gs {
+            color: red !important;
+        }
+
+        .a p {
+            background-color: skyblue;
+        }
+
+        #b {
+            color: green !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>takımlar</h1>
+        <p id="gs" class="futbol">gs</p> <!-- id class dan daha önceliklidir ama important alırsa öncelik değişir -->
+        <p class="futbol">fb</p>
+        <p class="basket">basket1</p>
+        <p class="basket">basket2</p>
+        <p class="voleybol">voleybol1</p>
+        <p class="voleybol"> voleybol2</p>
+    </div>
+    <div class="a">
+        <p id="b">hiyararşi</p>
+    </div>
+</body>
+
+</html>
