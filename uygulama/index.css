@@ -1,0 +1,96 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
+div {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+#yusuf {
+    font-family: "Times New Roman", Times, serif;
+    background-image: url("image/bk1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+span {
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 5px black;
+}
+
+.kurs {
+    width: 100%;
+    float: left;
+    /*  sola yaslayarak bir div icine uc div yerlestirdik   */
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.kurs1 {
+    padding-top: 5px;
+    width: 33.33%;
+    float: left;
+    /* sola yaslayarak bir div icine uc div yerlestirme  */
+}
+
+.kurs1:nth-child(1) {
+    background-image: url("image/bk2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+
+.kurs1:nth-child(2) {
+    background-image: url("image/bk3.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+
+.kurs1:nth-child(3) {
+    background-image: url("image/bk4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+
+#hakkimizda {
+    clear: both;
+    /* yukaridan gelen float yok etmek icin    */
+    background-color: rosybrown;
+    color: black;
+    margin-top: 20px;
+    height: 350px;
+}
+
+#hakkimizda img {
+    border: 5px dashed gray;
+    margin-top: 5px;
+}
+
+#hakkimizda p {
+    white-space: pre-line;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+#hakkimizda p::first-line {
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 500px) {
+    .kurs1 {
+        width: 100%;
+    }
+    #yusuf {
+        width: 100%;
+    }
+    #hakkimizda {
+        margin-top: 950px;
+    }
+}
