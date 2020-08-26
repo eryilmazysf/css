@@ -27,7 +27,7 @@ span {
 .kurs {
     width: 100%;
     float: left;
-    /*  sola yaslayarak bir div icine uc div yerlestirdik   */
+    /*  sola yaslayarak bir div icine 3 div yerlestirdik. float left ile div inline yapiyoruz ve sola yasliyoruz  */
     font-weight: bold;
     padding-top: 10px;
 }

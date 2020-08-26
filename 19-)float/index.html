@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            border: 5px solid turquoise;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        
+        p {
+            border: 1px solid black;
+            text-indent: 15px;
+            width: 50%;
+        }
+        
+        .float-right {
+            float: right;
+        }
+        
+        .float-left {
+            float: left;
+        }
+        
+        .clear {
+            clear: both;
+            /* clear ile kaydirmalardan etkilenmez (floatlardan) */
+        }
+        
+        div {
+            border: 2px dashed tomato;
+            height: 250px;
+            overflow: auto;
+            /* akis div icine sigdirip scroll bar yapmak icin overflow:auto kullaniriz  */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- picsum ile foto ekleme yapabiliriz -->
+    <img src="https://picsum.photos/id/961/600/400" class="float-right" alt="" />
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, reprehenderit?
+    </p>
+    <div class="clear">
+        <img src="https://picsum.photos/id/64/600/400" class="float-left" alt="" />
+        <p class="float-left">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <div class="clear">
+
+        <p style="width: 100%; top: auto; text-align: justify;">
+            <img src="https://picsum.photos/id/660/600/400" class="float-left" alt=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptatem magnam? Quod voluptas harum officia porro eaque dignissimos debitis non aspernatur magnam
+            totam? Rem dolorum molestiae natus ratione et ipsa ut reiciendis fugiat id. Vitae, nulla ipsum minima perferendis quasi itaque vel, in aperiam molestiae non vero exercitationem consequatur? Expedita voluptatem, temporibus ea quasi porro tempora
+            nulla? Modi eos dolorem, provident dolores quasi, quibusdam in officia ratione sequi delectus qui maiores temporibus ipsum id ipsam repellat nesciunt! Odit, accusamus! Magni in similique iste molestiae tenetur quis, eum obcaecati quibusdam
+            iure, a aliquam! Quis dicta voluptatem quos optio error, maxime fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ducimus ad hic in quasi minima quis quas saepe non ullam aliquid perferendis, voluptate deleniti inventore
+            aperiam quaerat assumenda aut nobis quisquam consequatur illum. Consequatur quaerat aspernatur iusto, minus mollitia amet dicta incidunt exercitationem, quas sequi dolorum nam ratione neque nihil, odio maiores. Quo quibusdam modi mollitia
+            reprehenderit sit minus amet adipisci animi, architecto voluptatum saepe dignissimos quidem quisquam vitae vel voluptas fugiat quaerat facere voluptatibus impedit. Voluptatem et maiores laborum nihil eius ipsam velit. Architecto, sapiente
+            hic eaque, adipisci vero veniam reprehenderit dolores in dolor id nam repudiandae, tenetur ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos illum, reiciendis recusandae eligendi sunt incidunt molestiae nam est asperiores
+            deleniti! Minus quasi fuga soluta repellat placeat delectus consectetur facere iste nobis id rem, itaque, expedita maxime sed voluptate officiis, illo praesentium assumenda iusto. Tempora fuga dicta pariatur, omnis cumque quod magni minus
+            nisi temporibus odit consectetur quae eveniet dignissimos non ratione nobis consequatur nulla, nemo, nihil ipsum adipisci! Repellendus optio non incidunt laboriosam earum perspiciatis officia sapiente omnis qui obcaecati ullam vero illo esse
+            recusandae, asperiores nisi alias, nam quia reiciendis aliquam. Fuga tempore vitae perspiciatis nemo similique reprehenderit tempora.
+        </p>
+    </div>
+</body>
+
+</html>

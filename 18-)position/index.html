@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+            width: 50%;
+            position: inherit;
+            border: 5px solid orange;
+        }
+        
+        .red {
+            background-color: red;
+            height: 50px;
+        }
+        
+        .yellow {
+            background-color: yellow;
+        }
+        
+        .turquaz {
+            background-color: turquoise;
+        }
+        
+        .purple {
+            background-color: black;
+            width: 100%;
+            height: 50px;
+        }
+        
+        .fixed {
+            position: fixed;
+            top: 100px;
+        }
+        
+        .sticky {
+            position: sticky;
+            /* sticky sayesinde mouse asagi inince ayarlanan yere gore sabit kalir */
+            top: 0;
+        }
+        
+        .white {
+            color: white;
+        }
+        
+        .relative1 {
+            background-color: silver;
+            width: 100%;
+        }
+        
+        .relative2 {
+            background-color: slategray;
+            width: 100%;
+        }
+        
+        .icrelative {
+            background-color: green;
+            height: 100px;
+            width: 100px;
+        }
+        
+        .relative {
+            position: relative;
+            /* relative position ile farenin asagi yukari hareketine gore akisi icindeki yeri ayarlamak icin kullanilir */
+        }
+        
+        .absolute {
+            position: absolute;
+        }
+        
+        body {
+            position: static;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        <p>HABERLER LOGO</p>
+    </div>
+    <div class="purple white sticky">
+        <!-- fixed ve sticky kullanarak gorebiliriz -->
+        <a href="" class="white">Anasayfa</a>
+        <a href="" class="white">Hakkimizda</a>
+    </div>
+    <div class="yellow">
+        <p>lorem5</p>
+        <p>lorem5</p>
+        <p>lorem5</p>
+        <p>lorem5</p>
+        <p>lorem5</p>
+        <p>lorem5</p>
+    </div>
+    <div class="turquaz">
+        <p>lorem5</p>
+        <p>lorem5</p>
+        <p>lorem5</p>
+        <p>lorem5</p>
+        <p>lorem5</p>
+        <p>lorem5</p>
+    </div>
+    <div class="relative1 relative" style="top: 20px;">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="icrelative relative" style="left: 200px; top:25px;"></div>
+    </div>
+    <div class="relative2 relative">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div class="absolute" style="background-color: hotpink; width: 100px; height: 150px;"></div>
+    <div class="absolute" style="background-color: lightsalmon; width:100px; height: 100px;"> </div>
+    <!-- position absolute olunca divler ust uste biniyor yer sabit akisdan cikiyor dahil olmuyor -->
+
+
+</body>
+
+</html>
+<!-- fixed ile istedigimiz yere konumlandiririz ve oraya sabitlenir mouse asagi doru hareket etse bile sabittir-->
+<!-- scroll asagi kaysa bile istenilen yerde kalir -->
+<!-- static de normal bir sekilde konumlandirilir ama top left right bottom kullanilmaz -->
+<!-- relative gorecelik akis icerisinde kalir ve istenilene yere gore konumlandirilir  top left ile akisa uyar-->
+<!-- absolute relativeden farki akisa uymaz  kendi parenta gore konumlanir-->
+<!-- sticky belli yere yapisir daha sonra mouse harekteine gore oldugu yere yapisir hareket etmez -->
