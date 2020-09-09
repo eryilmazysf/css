@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;AEHD,AAAA,UAAU,CAAC;EACP,gBAAgB,EAAE,MAAM;CAO3B;;AANI,AAAD,yBAAgB,CAAC;EACb,KAAK,EAAE,KAAK;CACf;;AACA,AAAD,yBAAgB,CAAC;EACb,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "../sassy/sass/style.scss",
+        "../sassy/sass/_reset.scss",
+        "../sassy/sass/_global.scss",
+        "../sassy/sass/_navbar.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
